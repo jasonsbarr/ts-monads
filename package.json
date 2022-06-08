@@ -1,0 +1,24 @@
+{
+  "name": "@jasonsbarr/ts-monads",
+  "version": "1.0.0",
+  "description": "A collection of algebraic data types for TypeScript",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc --build --clean && tsc",
+    "watch": "tsc -w",
+    "format": "prettier -w ./src"
+  },
+  "keywords": ["TypeScript", "ADTs", "Algebraic Data Types", "monads", "functional programming"],
+  "author": "Jason Barr",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.6.2",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}
